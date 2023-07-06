@@ -21,9 +21,6 @@ The project contains:
 ### Screen with football teams of the selected country (light/dark mode)
 <img src="https://github.com/antonbadretdinov/LiveSoccer/blob/master/teams_light.png" width="200"><img src="https://github.com/antonbadretdinov/LiveSoccer/blob/master/teams_dark.png" width="200">
 
-### Screen with football teams of the selected country (light/dark mode)
-<img src="https://github.com/antonbadretdinov/LiveSoccer/blob/master/teams_light.png" width="200"><img src="https://github.com/antonbadretdinov/LiveSoccer/blob/master/teams_dark.png" width="200">
-
 ### Screen with upcoming matches of the selected football team
 <img src="https://github.com/antonbadretdinov/LiveSoccer/blob/master/fixtures_light.png" width="200"><img src="https://github.com/antonbadretdinov/LiveSoccer/blob/master/fixtures_dark.png" width="200">
 

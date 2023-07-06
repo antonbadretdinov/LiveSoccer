@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LiveSoccer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="try_again_button">Try again</string>
+    <string name="choose_country">Choose the country:</string>
+    <string name="scotland">Scotland</string>
+    <string name="denmark">Denmark</string>
+    <string name="teams">Teams:</string>
+    <string name="see_squad">See the squad</string>
+    <string name="squad">Squad</string>
+    <string name="fixtures">Fixtures:</string>
+    <string name="sorry_we_do_not_have_such_data">Sorry, we do not have such data</string>
+    <string name="switch_mode">Switch mode</string>
+    <string name="see_the_api">See the API</string>
+</resources>

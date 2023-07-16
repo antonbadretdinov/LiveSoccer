@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.livesoccer.databinding.FragmentScheduleBinding
@@ -36,7 +35,7 @@ class ScheduleFragment : Fragment() {
         }
 
 
-        viewModel.scheduleLiveData.observe(activity as LifecycleOwner){schedule ->
+        viewModel.scheduleLiveData.observe(viewLifecycleOwner){schedule ->
             binding.recyclerSchedule.adapter = arguments?.getInt("teamId")?.let {
                     id -> ScheduleAdapter(schedule, id)
             }

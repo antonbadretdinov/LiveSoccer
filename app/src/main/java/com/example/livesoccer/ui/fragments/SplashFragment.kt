@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.fragment.findNavController
 import com.example.livesoccer.R
 import com.example.livesoccer.databinding.FragmentSplashBinding
@@ -30,13 +29,13 @@ class SplashFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        countriesViewModel.denmarkTeamsLiveData.observe(activity as LifecycleOwner){
+        countriesViewModel.denmarkTeamsLiveData.observe(viewLifecycleOwner){
             findNavController().navigate(R.id.action_splashFragment_to_countriesFragment)
         }
 
         if(activity?.hasInternetConnection() == true){
             countriesViewModel.getScotlandList()
-            countriesViewModel.geDenmarkList()
+            countriesViewModel.getDenmarkList()
         }else{
             Toast.makeText(activity, "No internet connection", Toast.LENGTH_SHORT).show()
             binding.progressBar.visibility = View.INVISIBLE
@@ -47,7 +46,7 @@ class SplashFragment : Fragment() {
         binding.tryAgainBtn.setOnClickListener {
             if(activity?.hasInternetConnection() == true){
                 countriesViewModel.getScotlandList()
-                countriesViewModel.geDenmarkList()
+                countriesViewModel.getDenmarkList()
                 binding.tryAgainBtn.visibility = View.INVISIBLE
                 binding.progressBar.visibility = View.VISIBLE
             }else{

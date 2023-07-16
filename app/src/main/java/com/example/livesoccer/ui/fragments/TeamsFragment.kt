@@ -1,13 +1,12 @@
 package com.example.livesoccer.ui.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.livesoccer.R
@@ -35,12 +34,12 @@ class TeamsFragment : Fragment(), SelectListener {
         binding.recyclerTeams.layoutManager = LinearLayoutManager(context)
         when(arguments?.getString("country")){
             "Scotland" ->{
-                teamsViewModel.scotlandTeamsLiveData.observe(activity as LifecycleOwner){
+                teamsViewModel.scotlandTeamsLiveData.observe(viewLifecycleOwner){
                     binding.recyclerTeams.adapter = TeamsAdapter(it,this)
                 }
             }
             "Denmark" ->{
-                teamsViewModel.denmarkTeamsLiveData.observe(activity as LifecycleOwner){
+                teamsViewModel.denmarkTeamsLiveData.observe(viewLifecycleOwner){
                     binding.recyclerTeams.adapter = TeamsAdapter(it,this)
                 }
             }

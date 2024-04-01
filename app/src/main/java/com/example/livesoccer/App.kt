@@ -1,10 +1,11 @@
 package com.example.livesoccer
 
 import android.app.Application
+import com.example.livesoccer.helpers.ONESIGNAL_APP_ID
 import com.onesignal.OneSignal
+import dagger.hilt.android.HiltAndroidApp
 
-const val ONESIGNAL_APP_ID = "311aab98-5ebf-40cc-928e-ce313d047113"
-
+@HiltAndroidApp
 class App: Application() {
     override fun onCreate() {
         super.onCreate()

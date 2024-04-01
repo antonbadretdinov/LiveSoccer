@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.livesoccer.R
 import com.example.livesoccer.databinding.TeamItemBinding
-import com.example.livesoccer.model.TeamListModel
-import com.example.livesoccer.model.TeamModel
+import com.example.livesoccer.data.models.TeamListModel
+import com.example.livesoccer.data.models.TeamModel
 import com.example.livesoccer.ui.adapters.listener.SelectListener
 
 class TeamsAdapter(private val teams: TeamListModel, private val listener: SelectListener)

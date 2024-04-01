@@ -12,10 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.livesoccer.R
 import com.example.livesoccer.databinding.FragmentTeamsBinding
 import com.example.livesoccer.helpers.extensions.hasInternetConnection
-import com.example.livesoccer.model.TeamModel
+import com.example.livesoccer.data.models.TeamModel
 import com.example.livesoccer.ui.adapters.TeamsAdapter
 import com.example.livesoccer.ui.adapters.listener.SelectListener
-import com.example.livesoccer.viewmodels.MainViewModel
+import com.example.livesoccer.ui.viewmodels.MainViewModel
 
 class TeamsFragment : Fragment(), SelectListener {
 

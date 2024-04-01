@@ -8,11 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.livesoccer.R
 import com.example.livesoccer.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,13 +32,14 @@ class MainActivity : AppCompatActivity() {
                 val currentNightMode =
                     resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
 
-                if(currentNightMode == Configuration.UI_MODE_NIGHT_NO){
+                if (currentNightMode == Configuration.UI_MODE_NIGHT_NO) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                }else{
+                } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 }
                 return true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }

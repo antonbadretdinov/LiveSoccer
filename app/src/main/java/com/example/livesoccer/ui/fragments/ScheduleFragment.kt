@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.livesoccer.databinding.FragmentScheduleBinding
 import com.example.livesoccer.ui.adapters.ScheduleAdapter
-import com.example.livesoccer.viewmodels.MainViewModel
+import com.example.livesoccer.ui.viewmodels.MainViewModel
 
 class ScheduleFragment : Fragment() {
 

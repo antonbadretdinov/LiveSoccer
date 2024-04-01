@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.livesoccer.R
 import com.example.livesoccer.databinding.ScheduleItemBinding
-import com.example.livesoccer.model.Round
-import com.example.livesoccer.model.ScheduleModel
+import com.example.livesoccer.data.models.Round
+import com.example.livesoccer.data.models.ScheduleModel
 
 class ScheduleAdapter(private val schedule: ScheduleModel, private val teamId: Int)
     : RecyclerView.Adapter<ScheduleAdapter.ViewHolder>() {

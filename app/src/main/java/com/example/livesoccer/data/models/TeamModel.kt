@@ -1,4 +1,4 @@
-package com.example.livesoccer.model
+package com.example.livesoccer.data.models
 
 
 data class TeamListModel(

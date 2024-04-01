@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.livesoccer.R
 import com.example.livesoccer.databinding.FragmentSplashBinding
 import com.example.livesoccer.helpers.extensions.hasInternetConnection
-import com.example.livesoccer.viewmodels.MainViewModel
+import com.example.livesoccer.ui.viewmodels.MainViewModel
 
 class SplashFragment : Fragment() {
 
